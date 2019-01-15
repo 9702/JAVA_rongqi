@@ -1,0 +1,32 @@
+package game;
+
+
+import java.util.*;
+
+public class testinteger{
+	
+	public static void test01() {
+		
+		List<String> list = new ArrayList<String>();
+		System.out.println("是否为空："+list.isEmpty());
+		list.add("吕彬钰");
+		System.out.println("是否为空："+list.isEmpty());
+		list.add("杨雅茹");
+		list.add("王金焕");
+		System.out.println(list);
+		System.out.println("list的大小："+list.size());
+		System.out.println("是否包含指定元素："+list.contains("杨雅茹"));
+		list.remove("吕彬钰");
+		System.out.println(list);
+		Object[] objs = list.toArray();
+		System.out.println("转化程Obejects数组："+Arrays.toString(objs));
+		list.clear();
+		System.out.println("清空所有的元素："+list);
+	}
+	public static void main(String[] args) {
+		test01();
+	}
+	
+	
+}
+
