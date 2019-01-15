@@ -1,0 +1,27 @@
+package game;
+
+class MyCollection<E>{//E:表示泛型
+		Object[] objs = new Object[5];
+		
+		public void set(E e , int index) {//自定义入后栏
+			objs[index] = e;
+		}
+		
+		public E get(int index) {//自定义出口栏
+			return 	(E) objs[index];
+		}		
+	}
+	
+public class testinteger{
+	
+	
+	public static void main(String[] args) {
+		MyCollection<String> md = new MyCollection<String>();
+		md.set("aaa",0);
+		md.set("bbb", 1);
+		
+		String str = (String)md.get(1);
+		System.out.println(str);
+	}
+}
+
